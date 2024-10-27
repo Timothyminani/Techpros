@@ -12,6 +12,10 @@ body{
     
 }
 
+.section1_of_one{
+    display: none;
+}
+
 .nav_container{
     width: 100%;
     height: 100px;
@@ -21,7 +25,7 @@ body{
 .Timo{
     color: white;
     margin-left: 55px;
-    margin-top: 10px;
+    margin-top: -20px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -98,7 +102,7 @@ ul li{
     height: 40px;
     position: absolute;
     right: 0;
-    top: -80px;
+    top: -50px;
     border: none;
     background-color: red;
     color: white;
@@ -322,6 +326,10 @@ ul li{
     flex-direction: column;
 }
 
+.section1_of_2{
+   display: none;
+}
+
 
 .title_about{
     width: 100%;
@@ -470,6 +478,10 @@ ul li{
    
 }
 
+.section1_of_3{
+    display: flex;
+}
+
 
 .service_text{
     color: red;
@@ -487,6 +499,25 @@ ul li{
 }
 
 .service_Container{
+    width: 300px;
+    height: 380px;
+  
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    box-shadow: 0px 10px 40px white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation:  rotate_shadow 3s linear infinite;
+    background-color:  #4b4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.service_Container2{
     width: 300px;
     height: 380px;
   
@@ -547,6 +578,10 @@ ul li{
     flex-direction: column;
 }
 
+.section1_of_4{
+    display: none;
+}
+
 
 .myproject_mainContainer{
     width: 100%;
@@ -560,6 +595,23 @@ ul li{
 
 
 .project_container{
+    width: 300px;
+    height: 380px;
+     border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    background-color:  #4b4a4a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    transition: 2s;
+    animation-name: description_about;
+    animation-duration: 2s;
+}
+
+.project_container2{
     width: 300px;
     height: 380px;
      border-top-right-radius: 150px;
@@ -815,7 +867,7 @@ ul li{
         color: white;
         margin-left: 80px;
         position: absolute;
-        top: -15px;
+        top: 16px;
         font-family:Arial, Helvetica, sans-serif;
     }
 
@@ -840,6 +892,7 @@ ul li{
         display: flex;
         
     }
+
 
     .welcome_msg{
       padding: 20px;
@@ -891,5 +944,215 @@ ul li{
     
     
 
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:420px){
+
+.section1_of_one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.more_text{
+    display: none;
+}
+
+.Download_cvBtn{
+    display: none;
+}
+
+.more_text2{
+    animation-name: third_sentence;
+    animation-duration: 1.8s;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.Download_cvBtn2{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 15px 55px  red;
+    animation-name: fromdown;
+    animation-duration: 1.8s;
+    transition: 1s;
+    margin-bottom: 500px;
+}
+
+
+    .nav_links{
+        width:900px;
+        position: absolute;
+        top: 100px;
+        right: -26px;
+       
+    }
+    
+
+    .nav_links ul{
+        width:400px;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding: 20px 20px 10px;
+        position: absolute;
+        background-color: rgb(46, 46, 46);
+        gap: 3em;
+        right: 1000px;
+    }
+
+
+    #nav.active{
+        right: -26px;
+    }
+
+  
+
+    /* ABOUT SECTION */
+
+
+    .about_container_Main{
+        width: 100%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+   .section1_of_2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   }
+
+
+   .about_imageContainer{
+    width: 100%;
+    height: 450px;
+    margin-left: 270px;
+}
+
+.about_description{
+    width: 100%;
+    height: 450px;
+    margin-left: 30px
+}
+
+
+/*Services section Services section Services section */
+
+.section1_of_3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+    
+    
+.my_service_mainContainer{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+
+}
+
+
+.service_Container2{
+    display: none;
+}
+
+
+
+.service_Container{
+    width: 90%;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 80px;
+  
+}
+
+.section1_of_3 .service_Container{
+    width: 90%;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+/* My project section My project section My project section */
+
+.section1_of_4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.myproject_mainContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    
+}
+
+.project_container2{
+    display: none;
+}
+
+.project_container{
+    margin-left: 100px;
+}
+
+
+/*form section form section form section */
+.form_container{
+    width: 100%;
+    margin-left: 70px;
+}
+
+.form{
+    width: 100%;
+}
+
+.getIn_Touch{
+    margin-right: 60px;
+}
+
+.footer{
+    width: 100%;
+    margin-left: 20px;
+}
 
 }
